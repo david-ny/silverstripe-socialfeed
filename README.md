@@ -42,6 +42,9 @@ My intention was to make it easier to adapt the module to other frameworks. The 
 
 ## installation
 
+```
+composer require "devcreative/socialfeed"
+```
 
 
 ## Usage

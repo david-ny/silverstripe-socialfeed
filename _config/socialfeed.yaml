@@ -1,0 +1,46 @@
+SocialFeedLogger:
+  email:
+    to: 'your@gemail.com' #recive status and error messages to this address
+    from: 'no-reply@yourhost.com' #send mesages from this address
+SocialFeedManager:
+  feeds:
+    FacebookFeed:
+      class: 'FacebookFeed'
+      feedID: 'XXXXXXXXXXXXXXX' #FB user_id
+      connectionData:
+        url : 'https://graph.facebook.com'
+        user_id: 'XXXXXXXXXXXXXXX'
+        fields: 'id,updated_time,full_picture,story,message,link,type,name,description,from,attachments{url},actions'
+        access_token: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+        #full_url: 'https://graph.facebook.com/XXXXXXXXXXXXXXX/posts?fields=id,updated_time,full_picture,story,message,link,type,name,description,from,attachments{url},actions&access_token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+
+    InstagramFeed:
+      class: 'InstagramFeed'
+      feedID: 'XXXXXXXXXX' #Instagram user_id
+      connectionData:
+        url : 'https://api.instagram.com/v1/users'
+        user_id: 'XXXXXXXXXX'
+        service: 'media/recent'
+        count: '15'
+        access_token: 'XXXXXXXXXX.XXXXXXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+        #full_url: 'https://api.instagram.com/v1/users/XXXXXXXXXX/media/recent/?count=15&access_token=XXXXXXXXXX.XXXXXXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+
+    TwitterFeed:
+      class: 'TwitterFeed'
+      feedID: 'XXXXXXXXXX' #twitter_handle
+      connectionData:
+        twitter_handle : 'XXXXXXXXXX'
+        url : 'https://api.twitter.com/1.1/statuses/user_timeline.json'
+        oauth_access_token : 'XXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+        oauth_access_token_secret : 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+        consumer_key: 'XXXXXXXXXXXXXXXXXXXXXXXXX'
+        consumer_secret: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+
+    YouTubeFeed:
+      class: 'YouTubeFeed'
+      feedID: 'XXXXXXXXXXXXXXXXXX_XXXX' #playlistID (uploads)
+      connectionData:
+        url : 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet'
+        playlistId: 'XXXXXXXXXXXXXXXXXX_XXXX'
+        key: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+        #url : 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=XXXXXXXXXXXXXXXXXX_XXXX&key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'

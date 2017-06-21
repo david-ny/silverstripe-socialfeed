@@ -1,0 +1,7 @@
+# ignore .sass-cache folder
+/.sass-cache/
+
+# ignore composer vendor folder
+/vendor/
+
+/config.rb

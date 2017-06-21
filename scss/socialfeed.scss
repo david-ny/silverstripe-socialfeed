@@ -1,0 +1,103 @@
+
+$item_height: 11em;
+
+
+.socialfeed {
+    width:100%;
+    padding: 0;
+
+    @media screen and (min-width: 640px) {
+        padding: $item_height / 2;
+    }
+
+    .showNew {
+        // display: block;
+        display: none;
+        box-shadow: 0 0 0.7em rgba(85, 85, 85, 0.3);
+        padding: 1.5%;
+        text-align: center;
+        width: 90%;
+        margin-right: $item_height /3;
+        position:relative;
+        left:50%;
+        transform: translate(-50%, 0);
+
+        @media screen and (min-width: 640px) {
+           width: $item_height *2;
+        }
+    }
+
+    .socialItem {
+        position:relative;
+        color: gray;
+        display:inline-block;
+        width: 100%;
+
+        min-height: $item_height;
+        margin-top: $item_height /2;
+        margin-right: $item_height /3;
+        background: white;
+        box-shadow: 0 0 0.7em rgba(#555555, 0.3);
+        vertical-align: top;
+
+        @media screen and (min-width: 640px) {
+           width: $item_height *2;
+        }
+
+        .pict {
+            position:relative;
+            display:block;
+            width:100%;
+            min-height: $item_height * 1.4;
+            background-color: #E6E6E6;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            img {
+                opacity:0.2;
+                position:absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height:50%;
+                width:auto;
+                border:none;
+            }
+        }
+
+        .desc {
+            display:block;
+            width:80%;
+            margin:10%;
+            min-height: $item_height;
+            //padding: $item_height / 8;
+
+            .date {
+                color: light-gray;
+                font-size: 0.7em;
+                position: absolute;
+                bottom:0;
+                margin-bottom:1em;
+            }
+            .text {
+                display:inlibe-block;
+            }
+            .type {
+                position: absolute;
+                bottom:0;
+                right:0;
+                opacity: 0.1;
+                width: $item_height * 0.2;
+                height:auto;
+                margin-bottom:1em;
+                margin-right:10%;
+                background: none;
+                border:none;
+            }
+        }
+
+    }
+
+
+}

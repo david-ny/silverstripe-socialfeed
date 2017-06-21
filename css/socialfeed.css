@@ -1,0 +1,87 @@
+/* line 5, ../scss/socialfeed.scss */
+.socialfeed {
+  width: 100%;
+  padding: 0; }
+  @media screen and (min-width: 640px) {
+    /* line 5, ../scss/socialfeed.scss */
+    .socialfeed {
+      padding: 5.5em; } }
+  /* line 15, ../scss/socialfeed.scss */
+  .socialfeed .showNew {
+    display: none;
+    box-shadow: 0 0 0.7em rgba(85, 85, 85, 0.3);
+    padding: 1.5%;
+    text-align: center;
+    width: 90%;
+    margin-right: 3.66667em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); }
+    @media screen and (min-width: 640px) {
+      /* line 15, ../scss/socialfeed.scss */
+      .socialfeed .showNew {
+        width: 22em; } }
+  /* line 32, ../scss/socialfeed.scss */
+  .socialfeed .socialItem {
+    position: relative;
+    color: gray;
+    display: inline-block;
+    width: 100%;
+    min-height: 11em;
+    margin-top: 5.5em;
+    margin-right: 3.66667em;
+    background: white;
+    box-shadow: 0 0 0.7em rgba(85, 85, 85, 0.3);
+    vertical-align: top; }
+    @media screen and (min-width: 640px) {
+      /* line 32, ../scss/socialfeed.scss */
+      .socialfeed .socialItem {
+        width: 22em; } }
+    /* line 51, ../scss/socialfeed.scss */
+    .socialfeed .socialItem .pict {
+      position: relative;
+      display: block;
+      width: 100%;
+      min-height: 15.4em;
+      background-color: #E6E6E6;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+      /* line 62, ../scss/socialfeed.scss */
+      .socialfeed .socialItem .pict img {
+        opacity: 0.2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50%;
+        width: auto;
+        border: none; }
+    /* line 74, ../scss/socialfeed.scss */
+    .socialfeed .socialItem .desc {
+      display: block;
+      width: 80%;
+      margin: 10%;
+      min-height: 11em; }
+      /* line 82, ../scss/socialfeed.scss */
+      .socialfeed .socialItem .desc .date {
+        color: light-gray;
+        font-size: 0.7em;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 1em; }
+      /* line 89, ../scss/socialfeed.scss */
+      .socialfeed .socialItem .desc .text {
+        display: inlibe-block; }
+      /* line 92, ../scss/socialfeed.scss */
+      .socialfeed .socialItem .desc .type {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.1;
+        width: 2.2em;
+        height: auto;
+        margin-bottom: 1em;
+        margin-right: 10%;
+        background: none;
+        border: none; }

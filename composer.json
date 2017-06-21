@@ -1,5 +1,5 @@
 {
-    "name": "devcreative/silverstripe-socialfeed",
+    "name": "devcreative/socialfeed",
     "description": "Allows you to display an aggregated feed of posts originated from various social media sites.",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "social", "feed", "Facebook", "Twitter", "YouTube", "Instagram"],
@@ -13,7 +13,7 @@
     {
         "silverstripe/framework": "3.*",
 	    "silverstripe/cms": "3.*"
-    },
+    }, 
     "replace": {"silverstripe/socialfeed": "*"}
     
 }

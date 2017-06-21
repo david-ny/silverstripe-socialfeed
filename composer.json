@@ -1,13 +1,12 @@
 {
-    "name": "devcreative/socialfeed",
+    "name": "devcreative/silverstripe-socialfeed",
     "description": "Allows you to display an aggregated feed of posts originated from various social media sites.",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "social", "feed", "Facebook", "Twitter", "YouTube", "Instagram"],
 	"license": "BSD-3-Clause",
     "authors": [
     {
-        "name": "David",
-        "email": "dave@devcreative.com"
+        "name": "david-ny"
     }
     ],
     "require":
